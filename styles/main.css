@@ -1,0 +1,45 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: contents;
+}
+
+header {
+    background-color: lightseagreen;
+    background-size: cover;
+    padding: 50px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    justify-self: start;
+}
+
+nav {
+    text-align: right;
+    justify-self: start;
+    align-self: center;
+    float: right;
+}
+
+nav, a {
+    text-decoration: none;
+}
+
+main {
+    
+    
+}
+
+.div-background-with-image {
+    display: flex;
+    min-width: 100vw;
+    align-items: center;
+}
+
+.div-background-with-image, h1 {
+    text-align: center;
+    justify-content: center;
+} 
