@@ -76,6 +76,16 @@ main {
     color:#5A7684;
 }
 
+.mid-p-links {
+    text-decoration: none;
+    color: #0082d8c9;
+}
+.mid-p-links:hover {
+    text-decoration: underline;
+    color: #50abe7;
+    
+}
+
 .home-heading, h1 {
     text-align: center;
     justify-content: center;
