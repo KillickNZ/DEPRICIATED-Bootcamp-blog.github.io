@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <title>Seb's blog</title>
     <meta charset="UTF-8">
@@ -7,34 +8,55 @@
     <meta name="author" content="Seb Chapman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+
 <body>
     <header>
         <h1>Bas.<br>Blog</h1>
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="/blog/sprint1-technical.html">Blog</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+        <nav class="nav-menu">
+            <a class="nav-menu" href="/index.html">Home</a>
+            <a class="nav-menu" href="/blog/blogs.html">Blog</a>
+            <a class="nav-menu" href="/aboutMe.html">About</a>
+            <a class="nav-menu" href="/contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
-        <div class="div-background-with-image">
+        <div class="home-heading">
             <h2>Welcome to my blog!</h2>
+            <hr class="horizontal-line">
         </div>
-        <div>
+        <div class="main-content">
             <div class="left-flex"></div>
             <div class="center-flex">
                 <p> This is the beginning of my website home page.</p>
-                <p> It will eventually contain a list of links to all my blogs. </p>
+                <ul class="main-blog-list">
+                    <li>
+                        <a class="list-links" href="/blog/technicalBlogs/introductionBlog.html">Introduction Blog</a>
+                    </li>
+                    <li>
+                        <a class="list-links" href="blog/technicalBlogs/sprint1-technical.html">Technical Blog</a>
+                    </li>
+                    <li>
+                        <a class="list-links" href="blog/coreBlogs/">Core Blog</a>
+                    </li>
+                </ul>
             </div>
             <div class="right-flex"></div>
         </div>
-    </main> 
+    </main>
 
     <footer>
-        <p>Thanks for reading my blog</p>
+        <p>
+            Thanks for reading my blog!
+        </p>
+        <p>
+            © Sebastian Chapman - 2021
+            All rights reserved
+        </p>
     </footer>
 </body>
 
