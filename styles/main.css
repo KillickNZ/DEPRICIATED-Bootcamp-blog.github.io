@@ -106,6 +106,10 @@ main {
     flex-shrink: 1;
 }
 
+.article-content {
+    padding: 100px;
+}
+
 .form-container {
     border-radius: 5px;
     padding: 100px;
