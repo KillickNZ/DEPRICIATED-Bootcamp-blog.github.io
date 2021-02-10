@@ -56,19 +56,21 @@ main {
     display: flex;
 }
 
-.home-heading {
+.page-heading {
     display: block;
     min-width: 100vw;
     align-items: center;
     font-family: Helvetica, sans-serif;
     /* background-color: #C2FCF7; */
     margin: 0;
-    padding: 30px 0px 30px 0px;
+    padding: 80px 0px 10px 0px;
     overflow: hidden;
+    font-size: 2em;
 }
 
 .horizontal-line {
     width: 90vw;
+    color:#5A7684;
 }
 
 .home-heading, h1 {
@@ -103,6 +105,23 @@ main {
     flex-grow: 1;
     flex-shrink: 1;
 }
+
+.form-container {
+    border-radius: 5px;
+    padding: 100px;
+    margin-top: -10px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical 
+}  
 
 footer {
     border-top: #5A7684 1px solid;

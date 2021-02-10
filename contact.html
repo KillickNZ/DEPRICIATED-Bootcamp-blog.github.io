@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <title>Seb's Contact</title>
     <meta charset="UTF-8">
@@ -8,21 +9,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Bas.<br>Blog</h1>
 
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/blog/blogs.html">Blog</a>
-            <a href="/aboutMe.html">About</a>
-            <a href="/contact.html">Contact</a>
+        <nav class="nav-menu">
+            <a class="nav-menu" href="/index.html">Home</a>
+            <a class="nav-menu" href="/blog/blogs.html">Blog</a>
+            <a class="nav-menu" href="/aboutMe.html">About</a>
+            <a class="nav-menu" href="/contact.html">Contact</a>
         </nav>
     </header>
 
-    <main><h1>Seb's Contact</h1></main>
+    <main>
+        <h2 class="page-heading">Get in touch! </h2>
+    </main>
+    <hr class="horizontal-line">
+    <div class="form-container">
+        <form action="#">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     <footer>
         <p>
             Thanks for reading my blog!
@@ -33,4 +51,5 @@
         </p>
     </footer>
 </body>
+
 </html>
