@@ -27,12 +27,15 @@ h1 {
 }
 
 nav {
+    position: fixed;
+    right: 2.5vw;
+    float: right;
     text-align: right;
     justify-self: start;
     align-self:flex-start;
     float: right;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.41);
+    background-color: rgba(0, 0, 0, 0.51);
     border-radius: 20px;
     word-spacing: 1rem;
     
