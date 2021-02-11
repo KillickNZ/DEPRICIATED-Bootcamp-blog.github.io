@@ -74,6 +74,8 @@ main {
 .horizontal-line {
     width: 90vw;
     color:#5A7684;
+    padding: 0px;
+    margin: 0px auto;
 }
 
 .mid-p-links {
@@ -130,6 +132,14 @@ main {
     flex-shrink: 1;
 }
 
+.article-heading {
+    text-decoration: none;
+    color: #395B50;
+}
+.article-heading:hover {
+    color: #5A7684;
+}
+
 .article-content {
     padding: 2vw 2vw;
     margin: 5vw 20vw;
@@ -161,8 +171,61 @@ input[type=text], select, textarea {
     resize: vertical 
 }  
 
+.blog-header {
+    position: fixed;
+    background-color: white;
+    z-index:99; 
+}
+
+.blog-post {
+    position: relative;
+    top: 25vh;
+    max-width: 1000px;
+    min-height: 100vh;
+    text-align: left;
+    justify-content: center;
+    margin: 50px auto 30vh auto;
+}
+
+#css-position-img {
+    width: 80%;
+    margin: 30px;
+}
+
+#css-code-snippit {
+    margin: 30px;
+}
+.button-container {
+    text-align: center;
+}
+
+.return-to-blogs-button {
+    border:#395B50 1px solid;
+    border-radius: 30px;
+    background-color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #395B50;
+    margin: 2vw auto;
+    text-align: center;
+    align-self: center;
+}
+.return-to-blogs-button:hover {
+    border-color: #50abe7;
+    color: #50abe7;
+}
+
 footer {
     border-top: #5A7684 1px solid;
     text-align: center;
     padding: 50px;
 }
+
+/* .hiiamaclass {
+    position: [ static | absolute | fixed | relative | sticky ]
+    top: 10px
+    bottom: 10rem
+    left: 10vh
+    right: 10vw
+    z-index: [ -99999 | 99999 ] ;
+} */
