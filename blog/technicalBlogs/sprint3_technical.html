@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Sprint3 Technical blog</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Sprint3 Technical blog">
+    <meta name="description" content="Sprint3 Technical blog">
+    <meta name="author" content="Seb Chapman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="blog-header">
+            <h2 class="page-heading">HTML, CSS, JS, Frankenstein, and the DOM</h2>
+            <hr class="horizontal-line">
+        </div>
+
+        <article class="blog-post">
+
+            <h2>Here is a story about HTML and CSS…</h2>
+
+            <h2>The Story of Frankenstein’s HTML and CSS monster.</h2>
+            <p>Once upon a time, in a little Bavarian town, somewhere at the bottom of a mountain, lived a man known by
+                the
+                name of Dr. Frankenstein.</p>
+            <p>Dr. Frankenstein was a tech savvy web dev, living his days just tinkering away on an old banged up
+                MacBook
+                pro. The Dr lived alone, and although he had many friends on reddit he was starting to long for someone
+                a
+                bit closer to home. One day, he got a crazy idea... What if I could create a human within my web
+                browser, to
+                live with me and keep me from getting lonely...? So he opened up VS code and started hacking away at the
+                keyboard “Typing noises”. First thing, he types up a head, then slaps on a body, chucks in a few asides
+                and
+                finally adds a footer. Dr Frankenstein, shaking from excitement opens up the browser to see his new
+                friend,
+                but what does he see? Nothing but the bare bones of his new friend. Devastated and wondering where he
+                gone
+                wrong he took off to his study to bury himself in stackoverflow, determined to find a way to bring his
+                new
+                friend to life. Weeks past, when he stumbles across a little link, barely still clickable. It takes him
+                to
+                W3schools.com where he finds a little tool they are referring to as CSS. Excited again, Dr Frankenstein
+                heads to his computer and starts typing away “Excessively loud typing noises”.</p>
+
+            <p>“I’ve done it!” He says to himself! He does his final commit and pushes his code to github. Once again,
+                riddled with excitement he opens the browser, heads to his github and opens the github pages file called
+                newFriend.html and there she is! Dr. Frankenstein’s new friend. She has long blonde hair, a green dress
+                on,
+                and little red ribbon on her head. The Dr is Exceptionally excited, he tells all his friends about her,
+                and
+                can’t wait to introduce her. But soon he notices, somethings wrong. When he says hello, or clicks on her
+                she
+                doesn’t move or do anything. It seems she’s not alive. So Dr. Frankenstein heads back to stackoverflow
+                to
+                see what he can do to give life to his new found friend... That part of the story will have to wait
+                until
+                the next chapter.</p>
+            <p>The next thing I would like to comment on are two core principles of coding. Control flows and Loops.
+                Control flow helps you determine when and what parts of the program are run. Loops are a way of
+                repeating
+                code until a certain condition is met. Here are a few pseudo code examples of different control flows
+                and
+                loops</p>
+
+            <p>For (item : itemsOfWashing){<br>
+                &#9;hangItem()<br>
+                &#9;}</p>
+
+            <p> DishesClean = false;<br>
+                &#9;While( !DishesClean)<br>
+                &#9;washDishes()
+            </p>
+
+            <p> If (leavingHouse){<br>
+                &#9;If (lightOn){<br>
+                &#9;&#9;turnLightOff()<br>
+                &#9;&#9;}
+                &#9;}</p>
+
+            <p>If (bored && tired ) { <br>
+                &#9;readABook<br>
+                &#9; }<br>
+                Else if (bored && !tired ) {<br>
+                &#9;goForARun()<br>
+                &#9;}</p>
+
+            <h3>A description what the DOM is and an example of how you might interact with it.</h3>
+
+            <p>The DOM is essentially a tree like structure for accessing and manipulating the content of your web page.
+                It
+                treats HTML and XML elements as nodes and objects which allows for the nodes to have parent, child and
+                sibling nodes. The following image gives a good representation:</p>
+
+            <img src="#" alt="DOM Image">
+
+            <p> An explanation of the difference between accessing data from arrays and objects.
+                Arrays are ordered objects and can be accessed using a numbered reference, starting from zero. For
+                example
+                array[0] will get the first item in the array, while array[9] would return the tenth. Objects however
+                have
+                Key - Value pairs and you can look up an individual object by searching for its key. Everyday life is
+                full
+                of objects which essentially act in the same way. For example a human, it has a hair property, height,
+                eye
+                colour etc. and object for a human might look like the following:</p>
+            <p> Const Human = {<br>
+                &#9;Name : “Seb”,<br>
+                &#9;Height : 158,<br>
+                &#9; EyeColor : “Blue”<br>
+                &#9;Interests : [ “Coding”, “Economics”, “Mountain Biking”, “Climbing”, “Hunting” ]<br>
+                &#9;}</p>
+
+            <p>As you can see an object can hold properties of all data types (including other objects). To access Seb’s
+                eye color, you can use ether dot or bracket notations. Dot notation would look like the following:
+                Human.EyeColor while bracket notation would look like human[‘EyeColor’]</p>
+
+            <p>Now onto functions.
+                Functions are a way of organising code and making it repeatable. They generally take an input and return
+                an
+                output. It is considered good practice for the input to not be altered but the function, but rather
+                return a
+                new object.</p>
+                
+            <form class="button-container" action="../blogs.html">
+                <input class="return-to-blogs-button" type="submit" value="other blogs" />
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>
+            Thanks for reading my blog!
+        </p>
+        <p>
+            © Sebastian Chapman - 2021
+            All rights reserved
+        </p>
+    </footer>
+</body>
+
+</html>
