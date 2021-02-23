@@ -77,6 +77,17 @@ main {
     padding: 0px;
     margin: 0px auto;
 }
+.horizontal-line-blogpost {
+    width: 50vw;
+    color:#5A7684;
+    padding: 0px;
+    margin: 0px auto 0px 0px;
+}
+#blog-subtext {
+    font-family: serif;
+    color: black;
+    font-size: .8rem;
+}
 
 .mid-p-links {
     text-decoration: none;
