@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Sprint4 Technical blog</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Sprint4 Technical blog">
+    <meta name="description" content="Sprint4 Technical blog">
+    <meta name="author" content="Seb Chapman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="blog-header">
+            <h2 class="page-heading">My Approach to problem solving.</h2>
+            <hr class="horizontal-line">
+        </div>
+
+        <article class="blog-post">
+
+            <h2>Getting Blocked.</h2>
+
+            <p>My story about getting blocked comes down to not using the right operator to evaluate some logic.
+                So for quite a while I was stuck on the line if(arr[i].toUpperCase() !== "BUZZ"),
+                It took a break down of the problem using console.log() to find out where I had gone wrong.
+                The tricky thing with this bug was while the logic read right, the way it was applied wasn’t working.
+                What I
+                had written was if(!arr[i].toUpperCase() === "BUZZ").
+            </p>
+
+            <p> Using the console.log() allowed me to see where the program was running fine up to and where the bug was
+                occurring. So then I went through and did some testing again with the console.log() to check if all my
+                data
+                structures were right. I realized that they were all correct so though it must be something to do with
+                the
+                logic!? So I change the line if(!arr[i].toUpperCase() === "BUZZ") to if(arr[i].toUpperCase() !== "BUZZ")
+                and
+                badda bing badda boom. It passed the tests. Here’s the full function below:
+            </p>
+
+
+            <p> function deBee (str){<br>
+                var arr = str.split(' ')<br>
+
+                var returnArr = [];<br>
+                for (var i = 0; i < arr.length; i++){ if(arr[i].toUpperCase() !=="BUZZ" ){ returnArr.push(arr[i]) }
+                    }<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return returnArr.join(" ");
+                    }
+            </p>
+            <p>I tried to solve this problem without googling and just thinking about the logic and what was going on,
+                as all the processes needed to solve the problem were things that I was familiar with so I thought it a
+                good exercise to take a bit longer and try and figure it out myself. The main thing learnt from this is
+                to test that the code you’ve written is doing what you think it should be.
+            </p>
+            <h2>Solving a problem in an elegant way.</h2>
+            <p>An interesting thing I learnt about JS objects in this Kata is that they allow for the use of the “this”
+                keyword. In this case It allows the user to get data from within an object to use within a function
+                within an object. So to make an analogy (nearly) every house has a spatula, but if you're talking about
+                your house with your partner, and someone mentions a spatula, then the one you’re talking about is
+                probably the one at home. An Object representation of that would be
+                Houses [ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;paulsHouse : {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Address: “42, Wallaby Way, Sydney”,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Spouse: “Jane”,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;SpatulaClean: true<br>
+                } ]</p>
+
+            <p>Here if Paul and Jane were having a conversation about who needs to clean the spatula, they’d be talking
+                about their spatula at home.
+                So if there was a function within the object for if the spatula needs cleaning or not, it might look
+                like this: <br>
+                Function isSpatulaClean() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;If (this.Spatula === true){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return “spatula is clean!”<br>
+                }<br>
+                Else { return “Time to do the dishes” }</p>
+            <p>So to use the “this” Keyword to solve the problem rather than creating variables and adding them into a
+                string was my elegant solution. It reads well, removes clutter.
+                Here is the function:</p>
+
+
+            <p>for (const athlete in athleteArray){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;athleteArray[athlete].win = function(){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;console.log(this.name +" won the "+ this.sport +" event!") } } <br>For this problem I did venture
+                out
+                onto
+                google. I wasn’t familiar with storing functions as part of an object within Javascript. That’s
+                where I stumbled across the “this” keyword. And the rest is history. Luckily I could apply my
+                knowledge of the principle of how the “this” keyword works within the Java language and could
+                loosely apply it quite easily.</p>
+            <form class="button-container" action="../blogs.html">
+                <input class="return-to-blogs-button" type="submit" value="other blogs" />
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>
+            Thanks for reading my blog!
+        </p>
+        <p>
+            © Sebastian Chapman - 2021
+            All rights reserved
+        </p>
+    </footer>
+</body>
+
+</html>
