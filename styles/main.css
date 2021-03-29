@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #C2FCF7;
+    background-color: #c2fcf7;
     background: URL("../resources/IMG_2797-2 copy 2.jpg") center no-repeat;
     background-size: cover;
     padding: 50px;
@@ -21,8 +21,8 @@ h1 {
     align-self: start;
     justify-self: start;
     text-align: left;
-    font-family: 'Inconsolata', monospace;
-    color: #C2FCF7;
+    font-family: "Inconsolata", monospace;
+    color: #c2fcf7;
     margin: 0px;
 }
 
@@ -32,30 +32,29 @@ nav {
     float: right;
     text-align: right;
     justify-self: start;
-    align-self:flex-start;
+    align-self: flex-start;
     float: right;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.51);
     border-radius: 20px;
     word-spacing: 1rem;
-    
 }
 
 .nav-menu {
     text-decoration: none;
-    color: #C2FCF7;
+    color: #c2fcf7;
 }
 
 main {
     max-width: 100vw;
     padding: 50px;
     text-align: center;
-    color: #395B50;
+    color: #395b50;
     display: contents;
 }
 
 .main-content {
-    color: #395B50;
+    color: #395b50;
     display: flex;
 }
 
@@ -73,37 +72,40 @@ main {
 
 .horizontal-line {
     width: 90vw;
-    color:#5A7684;
+    color: #5a7684;
     padding: 0px;
     margin: 0px auto;
 }
+
 .horizontal-line-blogpost {
     width: 50vw;
-    color:#5A7684;
+    color: #5a7684;
     padding: 0px;
     margin: 0px auto 0px 0px;
 }
+
 #blog-subtext {
     font-family: serif;
     color: black;
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .mid-p-links {
     text-decoration: none;
     color: #0082d8c9;
 }
+
 .mid-p-links:hover {
     text-decoration: underline;
     color: #50abe7;
-    
 }
 
-.home-heading, h1 {
+.home-heading,
+h1 {
     text-align: center;
     justify-content: center;
     font-size: 2rem;
-} 
+}
 
 .main-blog-list {
     display: inline-block;
@@ -113,19 +115,20 @@ main {
     font-size: 2rem;
 }
 
-.main-blog-list, li {
+.main-blog-list,
+li {
     margin: 1rem;
 }
 
 .list-links {
     text-decoration: none;
-    color: #395B50;
-}
-.list-links:hover {
-    text-decoration: none;
-    color: #5A7684;
+    color: #395b50;
 }
 
+.list-links:hover {
+    text-decoration: none;
+    color: #5a7684;
+}
 
 .left-flex {
     flex-grow: 1;
@@ -145,10 +148,11 @@ main {
 
 .article-heading {
     text-decoration: none;
-    color: #395B50;
+    color: #395b50;
 }
+
 .article-heading:hover {
-    color: #5A7684;
+    color: #5a7684;
 }
 
 .article-content {
@@ -162,7 +166,7 @@ main {
 }
 
 .article-date {
-    color: #C2FCF7;
+    color: #c2fcf7;
 }
 
 .form-container {
@@ -171,21 +175,23 @@ main {
     margin-top: -10px;
 }
 
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px;  
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical 
-}  
+    resize: vertical;
+}
 
 .blog-header {
     position: fixed;
     background-color: white;
-    z-index:99; 
+    z-index: 99;
 }
 
 .blog-post {
@@ -206,42 +212,56 @@ input[type=text], select, textarea {
 #css-code-snippit {
     margin: 30px;
 }
+
 .button-container {
     text-align: center;
 }
 
 .return-to-blogs-button {
-    border:#395B50 1px solid;
+    border: #395b50 1px solid;
     border-radius: 30px;
     background-color: white;
     padding: 20px;
     font-size: 1.5rem;
-    color: #395B50;
+    color: #395b50;
     margin: 2vw auto;
     text-align: center;
     align-self: center;
 }
+
 .return-to-blogs-button:hover {
     border-color: #50abe7;
     color: #50abe7;
 }
 
 footer {
-    border-top: #5A7684 1px solid;
+    border-top: #5a7684 1px solid;
     text-align: center;
     padding: 50px;
 }
 
-/* .hiiamaclass {
-    position: [ static | absolute | fixed | relative | sticky ]
-    top: 10px
-    bottom: 10rem
-    left: 10vh
-    right: 10vw
-    z-index: [ -99999 | 99999 ] ;
-} */
 
 #Emotional_Intelligence_png {
     width: 50vw;
     height: auto;
+}
+
+/* tablet portrait */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .footer {
+        padding: 30px;
+    }
+}
+
+/* tablets landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .footer {
+        padding: 20px;
+    }
+}
+/* most smart phones */
+@media (min-width: 481px) and (max-width: 767px) {
+    .footer {
+        padding: 10px;
+    }
 }
